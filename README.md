@@ -1081,7 +1081,6 @@ setting the warn level to 0 via `-W0`).
 
   ```ruby
   # bad
-
   def something
     if x.kind_of? Hash
       …
@@ -1089,7 +1088,6 @@ setting the warn level to 0 via `-W0`).
   end
 
   # good
-
   def something
     return nil if x.kind_of? Hash
     ...
