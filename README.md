@@ -1084,7 +1084,7 @@ setting the warn level to 0 via `-W0`).
 
   def something
     if x.kind_of? Hash
-    …
+      …
     end
   end
 
