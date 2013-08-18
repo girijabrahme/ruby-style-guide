@@ -1077,6 +1077,30 @@ setting the warn level to 0 via `-W0`).
 
 * Avoid the use of flip-flops.
 
+* Use short-circuited return statement instead of next blocks.
+
+  ```ruby
+  # bad
+
+  def something
+    if x.kind_of? Hash
+    …
+    end
+  end
+
+  # good
+
+  def something
+    return nil if x.kind_of? Hash
+    ...
+  end
+  ```
+
+
+
+
+
+
 ## Naming
 
 > The only real difficulties in programming are cache invalidation and
