@@ -1079,7 +1079,7 @@ setting the warn level to 0 via `-W0`).
 
 * Use short-circuited return statement instead of next blocks.
 
-  ```ruby
+  ```Ruby
   # bad
   def something
     if x.kind_of? Hash
